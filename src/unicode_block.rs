@@ -5,9 +5,9 @@ use core::{
 
 #[derive(Debug, Copy, Clone, Eq)]
 pub struct UnicodeBlock {
-    pub(crate) name:  &'static str,
+    pub(crate) name: &'static str,
     pub(crate) start: u32,
-    pub(crate) end:   u32,
+    pub(crate) end: u32,
 }
 
 impl UnicodeBlock {

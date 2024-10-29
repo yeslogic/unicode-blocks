@@ -38,11 +38,25 @@ fn is_cjk() {
 
 #[test]
 fn is_cjk_block() {
-    assert!(!unicode_blocks::is_cjk_block(unicode_blocks::find_unicode_block('1').unwrap()));
-    assert!(!unicode_blocks::is_cjk_block(unicode_blocks::find_unicode_block('a').unwrap()));
-    assert!(!unicode_blocks::is_cjk_block(unicode_blocks::find_unicode_block('/').unwrap()));
-    assert!(!unicode_blocks::is_cjk_block(unicode_blocks::find_unicode_block('ß').unwrap()));
-    assert!(unicode_blocks::is_cjk_block(unicode_blocks::find_unicode_block('中').unwrap()));
-    assert!(unicode_blocks::is_cjk_block(unicode_blocks::find_unicode_block('。').unwrap()));
-    assert!(unicode_blocks::is_cjk_block(unicode_blocks::find_unicode_block('，').unwrap()));
+    assert!(!unicode_blocks::is_cjk_block(
+        unicode_blocks::find_unicode_block('1').unwrap()
+    ));
+    assert!(!unicode_blocks::is_cjk_block(
+        unicode_blocks::find_unicode_block('a').unwrap()
+    ));
+    assert!(!unicode_blocks::is_cjk_block(
+        unicode_blocks::find_unicode_block('/').unwrap()
+    ));
+    assert!(!unicode_blocks::is_cjk_block(
+        unicode_blocks::find_unicode_block('ß').unwrap()
+    ));
+    assert!(unicode_blocks::is_cjk_block(
+        unicode_blocks::find_unicode_block('中').unwrap()
+    ));
+    assert!(unicode_blocks::is_cjk_block(
+        unicode_blocks::find_unicode_block('。').unwrap()
+    ));
+    assert!(unicode_blocks::is_cjk_block(
+        unicode_blocks::find_unicode_block('，').unwrap()
+    ));
 }
