@@ -1,11 +1,30 @@
-Unicode Blocks
-====================
+yeslogic-unicode-blocks
+=======================
 
-[![CI](https://github.com/magiclen/unicode-blocks/actions/workflows/ci.yml/badge.svg)](https://github.com/magiclen/unicode-blocks/actions/workflows/ci.yml)
+<div align="center">
+  <a href="https://github.com/yeslogic/unicode-blocks/actions/workflows/ci.yml">
+  <img src="https://github.com/yeslogic/unicode-blocks/actions/workflows/ci.yml/badge.svg" alt="Build Status"></a>
+  <a href="https://docs.rs/yeslogic-unicode-blocks">
+  <img src="https://docs.rs/yeslogic-unicode-blocks/badge.svg" alt="Documentation">
+  </a>
+  <a href="https://crates.io/crates/yeslogic-unicode-blocks">
+    <img src="https://img.shields.io/crates/v/yeslogic-unicode-blocks.svg" alt="Version">
+  </a>
+  <img src="https://img.shields.io/badge/unicode-16.0-informational" alt="Unicode Version">
+  <a href="https://github.com/yeslogic/unicode-blocks/blob/master/LICENSE">
+    <img src="https://img.shields.io/crates/l/unicode-blocks.svg" alt="License">
+  </a>
+</div>
+
+<br>
+
+This is fork of [unicode-blocks](https://github.com/magiclen/unicode-blocks)
+maintained by YesLogic. Differences from upstream: updated Unicode data, script
+to regenerate Rust source. Original README follows:
+
+----
 
 This crate contains a list of all unicode blocks and provides some functions to search across them.
-
-The latest version of Unicode: 15.1.0
 
 ## Examples
 
@@ -26,15 +45,3 @@ assert!(unicode_blocks::is_cjk_block(unicode_blocks::CJK_UNIFIED_IDEOGRAPHS));
 ```rust
 assert!(unicode_blocks::is_cjk('。'));
 ```
-
-## Crates.io
-
-https://crates.io/crates/unicode-blocks
-
-## Documentation
-
-https://docs.rs/unicode-blocks
-
-## License
-
-[MIT](LICENSE)
