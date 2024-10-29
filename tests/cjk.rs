@@ -1,3 +1,5 @@
+use yeslogic_unicode_blocks as unicode_blocks;
+
 #[test]
 fn find_block() {
     assert_eq!(
